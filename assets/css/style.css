@@ -56,7 +56,9 @@ body {
     margin: 0 auto;
     padding: 2rem 1.5rem;
 }
-
+.article_a{
+    text-decoration: none;
+}
 @media (max-width: 768px) {
     .container {
         padding: 1.5rem 1rem;
