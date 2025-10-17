@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Works — Alex Doe</title>
+    <meta name="description" content="Portfolio of projects by Alex Doe." />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Alex<span class="accent">.</span></a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="works.html">Works</a>
+          <a href="connect.html">Connect</a>
+          <a href="contact.html" class="cta">Contact</a>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            🌙
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Selected Works</h1>
+      <div class="card-grid" id="works-grid">
+        <!-- Project cards injected from HTML for simplicity -->
+        <article
+          class="card"
+          data-project='{"title":"Aurora UI","desc":"Design system & component library for a fintech startup.","tech":"React, TypeScript, Storybook","img":"assets/images/project1.jpg"}'
+        >
+          <img src="assets/images/project1-thumb.jpg" alt="Aurora UI" />
+          <div class="card-body">
+            <h3>Aurora UI</h3>
+            <p>Design system & component library for fintech product teams.</p>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-project='{"title":"Nomad App","desc":"Cross-platform travel planner app with offline maps.","tech":"React Native, GraphQL","img":"assets/images/project2.jpg"}'
+        >
+          <img src="assets/images/project2-thumb.jpg" alt="Nomad App" />
+          <div class="card-body">
+            <h3>Nomad App</h3>
+            <p>Travel planner app that works offline and syncs on reconnect.</p>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-project='{"title":"Studio Showcase","desc":"Marketing site and CMS for a creative studio.","tech":"Next.js, Sanity","img":"assets/images/project3.jpg"}'
+        >
+          <img src="assets/images/project3-thumb.jpg" alt="Studio Showcase" />
+          <div class="card-body">
+            <h3>Studio Showcase</h3>
+            <p>
+              Fast marketing site with rich editorial content and animation.
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year-works"></span> Alex Doe — Built with care.</p>
+      </div>
+    </footer>
+
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-dialog" role="dialog" aria-modal="true">
+        <button class="modal-close" aria-label="Close">✕</button>
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
