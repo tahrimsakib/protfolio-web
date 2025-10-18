@@ -2,135 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>TS protfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tahrim Sakib — Portfolio</title>
     <meta
       name="description"
-      content="Alex Doe — designer & developer. Creative, ambitious, building beautiful experiences for web and mobile."
+      content="Tahrim Sakib — Product designer and frontend engineer crafting immersive digital experiences."
     />
-    <link rel="icon" href="/assets/icons/favicon.svg" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <meta name="theme-color" content="#0f1724" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="logo" href="/index.html">TS<span class="accent">.</span></a>
-        <nav class="nav">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="works.html">Works</a>
-          <a href="connect.html">Connect</a>
-          <a href="contact.html" class="cta">Contact</a>
-          <button
-            id="theme-toggle"
-            class="theme-toggle"
-            aria-label="Toggle theme"
-          >
-            🌙
-          </button>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-text">
-            <h1>Hi, I'm sakib</h1>
-            <p class="tagline">
-              Creative product designer & frontend engineer crafting delightful
-              interfaces and experiences.
-            </p>
-            <p class="cta-row">
-              <a class="btn primary" href="works.html">See my work</a>
-              <a class="btn ghost" href="contact.html">Hire me</a>
-            </p>
-          </div>
-
-          <div class="hero-photo">
-            <img
-              src="assets/images/saki with boi mela2.jpg"
-              alt="Alex Doe smiling"
-            />
-          </div>
-        </div>
-      </section>
-
-
-      <!-- project section -->
-      <section class="featured container">
-        <h2>Selected Projects</h2>
-        <div class="card-grid" id="featured-grid">
-          <a class="article_a" href="https://github.com/tahrimsakib/protfolio-web">
-            <article class="card">
-              <img src="assets/images/nasa-5477L9Z5eqI-unsplash.jpg" alt="Aurora UI" />
-              <div class="card-body">
-                <h3>Aurora UI</h3>
-                <p>
-                  Design system & component library for fintech product teams.
-                </p>
-              </div>
-            </article></a
-          >
-          <a class="article_a" href="https://github.com/tahrimsakib/protfolio-web">
-            <article class="card">
-              <img src="assets/images/nasa-5477L9Z5eqI-unsplash.jpg" alt="Aurora UI" />
-              <div class="card-body">
-                <h3>Aurora UI</h3>
-                <p>
-                  Design system & component library for fintech product teams.
-                </p>
-              </div>
-            </article></a
-          >
-          <a class="article_a" href="https://github.com/tahrimsakib/protfolio-web">
-            <article class="card">
-              <img src="assets/images/nasa-5477L9Z5eqI-unsplash.jpg" alt="Aurora UI" />
-              <div class="card-body">
-                <h3>Aurora UI</h3>
-                <p>
-                  Design system & component library for fintech product teams.
-                </p>
-              </div>
-            </article></a
-          >
-          
-
-      
-        </div>
-      </section>
-
-      <section class="skills container">
-        <h2>Skills & Tools</h2>
-        <ul class="skills-list">
-          <li>Design systems & UI — Figma</li>
-          <li>Frontend — HTML, CSS, JavaScript, React</li>
-          <li>Mobile — React Native, Expo</li>
-          <li>Backend — Node, GraphQL</li>
-          <li>Other — Accessibility, Performance, Testing</li>
-        </ul>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© <span id="year"></span> Alex Doe — Built with care.</p>
-        <nav class="social">
-          <a href="https://github.com/tahrimsakib" aria-label="GitHub">GitHub</a>
-          <a href="https://github.com/tahrimsakib" aria-label="LinkedIn">LinkedIn</a>
-          <a href="https://github.com/tahrimsakib" aria-label="Twitter">Twitter</a>
-        </nav>
-      </div>
-    </footer>
-
-    <div id="modal" class="modal" aria-hidden="true">
-      <div class="modal-dialog" role="dialog" aria-modal="true">
-        <button class="modal-close" aria-label="Close">✕</button>
-        <div class="modal-content" id="modal-content"></div>
-      </div>
-    </div>
-
-    <script src="assets/js/main.js" defer></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

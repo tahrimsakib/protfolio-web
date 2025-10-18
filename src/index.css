@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-ink-900 text-slate-100 font-sans antialiased min-h-screen;
+        background-image: radial-gradient(circle at top left, rgba(124, 58, 237, 0.35), transparent 55%), radial-gradient(circle at bottom right, rgba(67, 56, 202, 0.25), transparent 60%);
+    }
+}
+
+@layer components {
+    .section-title {
+        @apply text-3xl md:text-4xl font-bold tracking-tight bg-gradient-to-r from-slate-100 via-accent-400 to-slate-300 bg-clip-text text-transparent;
+    }
+}

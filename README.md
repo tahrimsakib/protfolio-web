@@ -1,17 +1,41 @@
-# Portfolio site (static)
+# Portfolio site (React + Tailwind)
 
-This is a small, modern, responsive static portfolio site template. It includes:
+Modern single-page portfolio built with React, Vite, React Router, and Tailwind CSS.
 
-- Home, About, Works, Connect, Contact pages
-- Dark / Light theme toggle
-- Project modal preview
-- Contact form with client validation and mailto fallback
+## Features
 
-How to use
+- Animated hero, featured projects, and collaboration sections styled with Tailwind
+- Multi-page routing (Home, About, Works, Connect, Contact) powered by React Router
+- Responsive navigation with mobile drawer
+- Tailwind forms styling and smooth scroll-to-top between routes
 
-1. Open the `portfolio-site` folder in a static server or preview in VS Code Live Server.
-2. Edit content in the HTML files and replace images in `assets/images/`.
+## Getting started
 
-Deploy
+1. Install dependencies
+   ```bash
+   npm install
+   ```
+2. Start the dev server
+   ```bash
+   npm run dev
+   ```
+3. Build for production
+   ```bash
+   npm run build
+   ```
 
-This is a static site — you can deploy it to GitHub Pages, Netlify, Vercel, or any static host.
+## Project structure
+
+- `src/` — React components, pages, and shared data
+- `public/` — static assets such as the favicon
+- `tailwind.config.js` — Tailwind customization (palette, fonts, shadows)
+
+## Customization
+
+- Update project data in `src/data/projects.js`
+- Replace hero or gallery imagery with assets in `public/images`
+- Adjust Tailwind tokens (colors, shadows, typography) via `tailwind.config.js`
+
+## Deploy
+
+Build output in `dist/` can be hosted on Netlify, Vercel, GitHub Pages, or any static host.
